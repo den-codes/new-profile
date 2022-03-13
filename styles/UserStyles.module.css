@@ -1,0 +1,70 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+.card{
+    margin: .5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    height: 20vh;
+    background-color: white;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 5px 29px 3px rgba(110, 110, 110, 0.5); 
+    box-shadow: 0px 5px 29px 3px rgba(129, 129, 129, 0.5);
+}
+.card:hover{
+    -webkit-box-shadow: 0px 5px 29px 3px rgba(44, 44, 44, 0.74); 
+box-shadow: 0px 5px 29px 3px rgba(37, 37, 37, 0.74);
+}
+.row-spacing{
+    padding: 1rem 0;
+}
+.svg{
+ width: 1.5rem;
+ height: 1.5rem;
+ margin: 0 .3rem
+}
+.title{
+    color: white;
+}
+.label{
+    font-size: 1.5rem;
+    color:#00143f
+}
+.span{
+    font-size: 1rem;
+    font-style: normal;
+    text-align: center;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    margin: 2rem auto;
+    height:45px;
+    background-color: #004ef5;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: #3d6cd1;
+}
+
+@media screen and (max-width: 788px){
+    .container{
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;   
+        align-items: center;
+    }
+    .card{
+        min-width:50vw;
+        height:20vh;
+    }
+}

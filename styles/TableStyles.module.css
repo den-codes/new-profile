@@ -1,0 +1,29 @@
+.container{
+    width: 70vw;
+    background-color: #f8fafc;
+    margin: .2rem;
+}
+.th_spacing{
+    padding: 1rem 2rem;
+    text-align: center;
+}
+.head{
+    background-color: #f8fafc;
+    color: rgb(0, 0, 0);
+    font-style: bold;
+    padding: 2rem 2rem;
+}
+.tb_spacing{
+    height: 3rem;
+    padding: 2rem 2rem;
+    text-align: center;
+    border: 1px solid black;
+}
+.tb_spacing:hover{
+    background-color: lightskyblue;
+}
+@media screen and (max-width: 438px){
+    .container{
+        min-width: 300px;
+    }
+}

@@ -1,14 +1,19 @@
 .container {
-  padding: 0 2rem;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .main {
   min-height: 100vh;
-  padding: 4rem 0;
+  padding: .5rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -40,11 +45,18 @@
 }
 
 .title {
-  margin: 0;
+  margin: 0 1rem;
   line-height: 1.15;
-  font-size: 4rem;
+  font-size: 3rem;
+  color: #f8fafc;
+  font-weight: 300;
 }
-
+.info{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  color:#f8fafc;
+}
 .title,
 .description {
   text-align: center;
@@ -104,13 +116,6 @@
 }
 
 .logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
+  height: .8em;
+  margin: 0 1rem;
 }
